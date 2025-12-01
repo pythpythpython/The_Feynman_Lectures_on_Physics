@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 SCAFFOLD VOLUME 3: QUANTUM MECHANICS
-Creates the directory structure and notebooks for Chapters 1-21 of Volume 3.
+Creates the directory structure and notebooks for ALL 21 Chapters of Volume 3.
 """
 
 import nbformat as nbf
@@ -28,10 +28,10 @@ toc_data_vol3 = {
         "Filtering atoms with a Stern-Gerlach apparatus", "Experiments with filtered atoms", "Stern-Gerlach filters in series", "Base states", "Interfering amplitudes", "The machinery of quantum mechanics", "Transforming to a different base", "Other situations"
     ]),
     6: ("Spin One-Half", [
-        "Transforming amplitudes", "Transforming to a rotated coordinate system", "Rotations about the z-axis", "Rotations of 180 and 90 about y", "Rotations about x", "Arbitrary rotations"
+        "Transforming amplitudes", "Transforming to a rotated coordinate system", "Rotations about the z-axis", "Rotations of 180 degrees and 90 degrees about y", "Rotations about x", "Arbitrary rotations"
     ]),
     7: ("The Dependence of Amplitudes on Time", [
-        "Atoms at rest; stationary states", "Uniform motion", "Potential energy; energy conservation", "Forces; the classical limit", "The “precession” of a spin one-half particle"
+        "Atoms at rest; stationary states", "Uniform motion", "Potential energy; energy conservation", "Forces; the classical limit", "The precession of a spin one-half particle"
     ]),
     8: ("The Hamiltonian Matrix", [
         "Amplitudes and vectors", "Resolving state vectors", "What are the base states of the world?", "How states change with time", "The Hamiltonian matrix", "The ammonia molecule"
@@ -64,7 +64,7 @@ toc_data_vol3 = {
         "Symmetry", "Symmetry and conservation", "The conservation laws", "Polarized light", "The disintegration of the Λ0", "Summary of the rotation matrices"
     ]),
     18: ("Angular Momentum", [
-        "Electric dipole radiation", "Light scattering", "The annihilation of positronium", "Rotation matrix for any spin", "Measuring a nuclear spin", "Composition of angular momentum", "Added Note 1: Derivation of the rotation matrix", "Added Note 2: Conservation of parity in photon emission"
+        "Electric dipole radiation", "Light scattering", "The annihilation of positronium", "Rotation matrix for any spin", "Measuring a nuclear spin", "Composition of angular momentum"
     ]),
     19: ("The Hydrogen Atom and The Periodic Table", [
         "Schrödinger’s equation for the hydrogen atom", "Spherically symmetric solutions", "States with an angular dependence", "The general solution for hydrogen", "The hydrogen wave functions", "The periodic table"
@@ -97,7 +97,7 @@ base_path = "/workspaces/The_Feynman_Lectures_on_Physics/volume-3-quantum-mechan
 # -----------------------------------------------------------------------------
 # 3. EXECUTION LOOP
 # -----------------------------------------------------------------------------
-print(f"🚀 Starting Scaffolding for Volume 3 (Quantum Mechanics) in: {base_path}")
+print(f"🚀 Starting Scaffolding for Volume 3 (Chapters 1-21) in: {base_path}")
 
 if not os.path.exists(base_path):
     try:
@@ -146,7 +146,7 @@ for ch_num, (ch_title, sections) in toc_data_vol3.items():
         create_notebook(
             dash_path,
             f"🗺️ Vol 3 Chapter {ch_num} Master Overview: {ch_title}",
-            "## The Command Center\n\nUse this notebook to navigate your quantum journey."
+            "## The Command Center\n\nUse this notebook to navigate your reading notes, exercises, and logs."
         )
 
     # 2. QA Journal
